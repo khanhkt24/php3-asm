@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\Admin\PostController;
+use App\Http\Controllers\Admin\TagController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -20,3 +22,8 @@ Route::get('/', function () {
 Route::get('/detail', function () {
     return view('frontends.layouts.post-details');
 });
+
+Route::resource('tags', TagController::class);
+
+Route::resource('posts', PostController::class);
+

@@ -8,5 +8,19 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Post extends Model
 {
-    use HasFactory,SoftDeletes;
+    use HasFactory, SoftDeletes;
+
+    protected $fillable = [
+        'image',
+        'name',
+        'title',
+        'view',
+        'date_add',
+        'main_content',
+    ];
+
+
+    public function tags(){
+        return $this->belongsToMany(Tag::class);
+    }
 }
