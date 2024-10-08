@@ -109,9 +109,13 @@ class PostController extends Controller
                 if ($request->hasFile('image')) {
                     $data['image'] = Storage::put('posts', $request->file('image'));
                 }
+                $postImage = $post->image;
 
-                $post::query()->update($data);
+                $post->update($data);
 
+                if($request->hasFile('image') && !empty($postImage) && Storage::exists($postImage)){
+                    Storage::delete($postImage);
+                }
 
                 $post->tags()->sync($request->tags);
             });

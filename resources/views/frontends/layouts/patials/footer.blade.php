@@ -7,16 +7,16 @@
     <h2 class="h3 mb-4">INSTAGRAM POST</h2>
 
     <div class="instagram-slider">
-      <div class="instagram-post"><img src="client/images/instagram/1.jpg"></div>
-      <div class="instagram-post"><img src="client/images/instagram/2.jpg"></div>
-      <div class="instagram-post"><img src="client/images/instagram/4.jpg"></div>
-      <div class="instagram-post"><img src="client/images/instagram/3.jpg"></div>
-      <div class="instagram-post"><img src="client/images/instagram/2.jpg"></div>
-      <div class="instagram-post"><img src="client/images/instagram/1.jpg"></div>
-      <div class="instagram-post"><img src="client/images/instagram/3.jpg"></div>
-      <div class="instagram-post"><img src="client/images/instagram/4.jpg"></div>
-      <div class="instagram-post"><img src="client/images/instagram/2.jpg"></div>
-      <div class="instagram-post"><img src="client/images/instagram/4.jpg"></div>
+        <div class="instagram-post"><img src="{{ asset('client/images/instagram/1.jpg') }}"></div>
+        <div class="instagram-post"><img src="{{ asset('client/images/instagram/2.jpg') }}"></div>
+        <div class="instagram-post"><img src="{{ asset('client/images/instagram/4.jpg') }}"></div>
+        <div class="instagram-post"><img src="{{ asset('client/images/instagram/3.jpg') }}"></div>
+        <div class="instagram-post"><img src="{{ asset('client/images/instagram/2.jpg') }}"></div>
+        <div class="instagram-post"><img src="{{ asset('client/images/instagram/1.jpg') }}"></div>
+        <div class="instagram-post"><img src="{{ asset('client/images/instagram/3.jpg') }}"></div>
+        <div class="instagram-post"><img src="{{ asset('client/images/instagram/4.jpg') }}"></div>
+        <div class="instagram-post"><img src="{{ asset('client/images/instagram/2.jpg') }}"></div>
+        <div class="instagram-post"><img src="{{ asset('client/images/instagram/4.jpg') }}"></div>
     </div>
 </div>
 
@@ -29,7 +29,7 @@
         </ul>
     </div>
     <div class="col-md-2 text-center mb-4">
-        <a href="index.html"><img class="img-fluid" width="100px" src="client/images/logo.png" alt="Reader | Hugo Personal Blog Template"></a>
+        <a href="index.html"><img class="img-fluid" width="100px" src="{{asset('client/images/logo.png')}}" alt="Reader | Hugo Personal Blog Template"></a>
     </div>
     <div class="col-md-5 text-md-right text-center mb-4">
         <ul class="list-inline footer-list mb-0">

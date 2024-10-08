@@ -34,7 +34,7 @@
                             </td>
                             <td>{{ $item->name }}</td>
 
-                            <td>{{ $item->title }}</td>
+                            <td>{{ Str::limit($item->title, 100, '...') }}</td>
 
                             <td>{{ $item->view }}</td>
 
@@ -49,7 +49,7 @@
                             </td>
 
                             <td class="d-flex gap-1">
-                                <a href="{{ route('posts.show',$item->id) }}" class="btn btn-warning" role="button">Show</a>
+                                <a href="{{ route('posts.show',$item->id) }}" class="btn btn-primary" role="button">Show</a>
 
                                 <a href="{{ route('posts.edit',$item->id) }}" class="btn btn-warning" role="button">Sửa</a>
                                 <form action="{{ route('posts.destroy',$item->id) }}" method="POST">
