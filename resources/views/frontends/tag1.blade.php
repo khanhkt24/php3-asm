@@ -17,7 +17,7 @@
                             <ul class="card-meta my-3 list-inline">
                                 <li class="list-inline-item">
                                     <a href="author-single.html" class="card-meta-author">
-                                        <img src="C:\laragon\www\php3-asm\public\client\images\john-doe.jpg">
+                                        <img class="img-fluid" src="client/images/My.jpg" alt="Themefisher">
                                         <span>Hồng Đăng</span>
                                     </a>
                                 </li>

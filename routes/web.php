@@ -34,7 +34,7 @@ Route::get('/detail', function () {
     return view('frontends.layouts.post-details');
 });
 
-Route::get('/home', [HomeController::class, 'dashboard'])->name('home');
+Route::get('/', [HomeController::class, 'dashboard'])->name('home');
 Route::get('/header', [HomeController::class, 'header']);
 Route::get('/navbar', [HomeController::class, 'navbar']);
 

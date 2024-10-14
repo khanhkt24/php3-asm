@@ -17,7 +17,7 @@
                             <ul class="card-meta list-inline">
                                 <li class="list-inline-item">
                                     <a href="author-single.html" class="card-meta-author">
-                                        <img src="client/images/john-doe.jpg">
+                                        <img class="img-fluid" src="client/images/My.jpg" alt="Themefisher">
                                         <span>Post Author</span>
                                     </a>
                                 </li>
@@ -110,7 +110,7 @@
                             <ul class="card-meta list-inline">
                                 <li class="list-inline-item">
                                     <a href="author-single.html" class="card-meta-author">
-                                        <img src="client/images/john-doe.jpg">
+                                        <img class="img-fluid" src="client/images/My.jpg" alt="Themefisher">
                                         <span>Post Author</span>
                                     </a>
                                 </li>
@@ -155,7 +155,7 @@
                             <ul class="card-meta list-inline">
                                 <li class="list-inline-item">
                                     <a href="author-single.html" class="card-meta-author">
-                                        <img src="client/images/john-doe.jpg" alt="John Doe">
+                                        <img class="img-fluid" src="client/images/My.jpg" alt="Themefisher">
                                         <span>Post Author</span>
                                     </a>
                                 </li>
@@ -205,8 +205,15 @@
 
                     <!-- about me -->
                     <div class="widget widget-about">
-                        <h4 class="widget-title">Hi, {{Auth::user()->name}}</h4>
-                        <img class="img-fluid" src="client/images/author.jpg" alt="Themefisher">
+                        <h4 class="widget-title">Hi,
+
+                            @if (Auth::user())
+                                {{Auth::user()->name}}
+                            @else
+                                Khổng Trọng Khánh
+                            @endif
+                        </h4>
+                        <img class="img-fluid" src="client/images/My.jpg" alt="Themefisher">
                         <p>Để trưởng thành được như ngày hôm nay chắc hẳn bạn đã trải qua rất nhiều những vấp ngã và tổn thương. Vậy để vượt qua những lúc như vậy, chúng ta cần có đọng lực để bước tiếp.</p>
                         <ul class="list-inline social-icons mb-3">
 
@@ -222,17 +229,6 @@
 
                         </ul>
                         <a href="about-me.html" class="btn btn-primary mb-2">About me</a>
-                    </div>
-
-                    <!-- Promotion -->
-                    <div class="promotion">
-                        <img src="client/images/promotion.jpg" class="img-fluid w-100">
-                        <div class="promotion-content">
-                            <h5 class="text-white mb-3">Create Stunning Website!!</h5>
-                            <p class="text-white mb-4">Lorem ipsum dolor sit amet, consectetur sociis. Etiam nunc amet
-                                id dignissim. Feugiat id tempor vel sit ornare turpis posuere.</p>
-                            <a href="https://themefisher.com/" class="btn btn-primary">Get Started</a>
-                        </div>
                     </div>
 
                     <!-- authors -->
@@ -275,57 +271,6 @@
                             @endforeach
                         </ul>
                     </div><!-- recent post -->
-                    <div class="widget">
-                        <h4 class="widget-title">
-                            Bài đăng gần đây</h4>
-
-                        <!-- post-item -->
-                        <article class="widget-card">
-                            <div class="d-flex">
-                                <img class="card-img-sm" src="client/images/post/post-10.jpg">
-                                <div class="ml-3">
-                                    <h5><a class="post-title" href="post/elements/">Elements That You Can Use In This
-                                            Template.</a></h5>
-                                    <ul class="card-meta list-inline mb-0">
-                                        <li class="list-inline-item mb-0">
-                                            <i class="ti-calendar"></i>15 jan, 2020
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </article>
-
-                        <article class="widget-card">
-                            <div class="d-flex">
-                                <img class="card-img-sm" src="client/images/post/post-3.jpg">
-                                <div class="ml-3">
-                                    <h5><a class="post-title" href="post-details.html">Advice From a Twenty
-                                            Something</a></h5>
-                                    <ul class="card-meta list-inline mb-0">
-                                        <li class="list-inline-item mb-0">
-                                            <i class="ti-calendar"></i>14 jan, 2020
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </article>
-
-                        <article class="widget-card">
-                            <div class="d-flex">
-                                <img class="card-img-sm" src="client/images/post/post-7.jpg">
-                                <div class="ml-3">
-                                    <h5><a class="post-title" href="post-details.html">Advice From a Twenty
-                                            Something</a></h5>
-                                    <ul class="card-meta list-inline mb-0">
-                                        <li class="list-inline-item mb-0">
-                                            <i class="ti-calendar"></i>14 jan, 2020
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-
                     <!-- Social -->
                     <div class="widget">
                         <h4 class="widget-title"><span>Social Links</span></h4>
