@@ -27,7 +27,7 @@ class HomeController extends Controller
 
     public function dashboard()
     {
-        $query = Post::with('tags')->orderBy('view', 'desc')->get();
+        $query = Post::with('tags')->orderBy('created_at', 'desc')->get();
         // dd($query);
         $hotPost = Post::orderBy('view', 'desc')->limit(3)->get();
         $latestPost = Post::orderBy('updated_at', 'asc')->oldest('id')->limit(1)->get();
