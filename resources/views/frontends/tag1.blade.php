@@ -57,7 +57,7 @@
 
                     <!-- about me -->
                     <div class="widget widget-about">
-                        <h4 class="widget-title">Khổng Trọng Khánh</h4>
+                        <h4 class="widget-title">{{Auth::user()->name}}</h4>
                         <img class="img-fluid" src="{{asset('client/images/My.jpg')}}" alt="Themefisher">
                         <p>Để trưởng thành được như ngày hôm nay chắc hẳn bạn đã trải qua rất nhiều những vấp
                             ngã và tổn thương.

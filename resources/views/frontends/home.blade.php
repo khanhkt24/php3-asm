@@ -205,7 +205,7 @@
 
                     <!-- about me -->
                     <div class="widget widget-about">
-                        <h4 class="widget-title">Hi, I am Alex!</h4>
+                        <h4 class="widget-title">Hi, {{Auth::user()->name}}</h4>
                         <img class="img-fluid" src="client/images/author.jpg" alt="Themefisher">
                         <p>Để trưởng thành được như ngày hôm nay chắc hẳn bạn đã trải qua rất nhiều những vấp ngã và tổn thương. Vậy để vượt qua những lúc như vậy, chúng ta cần có đọng lực để bước tiếp.</p>
                         <ul class="list-inline social-icons mb-3">
