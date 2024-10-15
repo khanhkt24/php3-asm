@@ -47,7 +47,7 @@
                         <div class="card-body d-flex">
                             <img class="card-img-sm" src="client/images/post/post-3.jpg">
                             <div class="ml-3">
-                                <h4><a href="post-details.html" class="post-title">Advice From a Twenty Something</a>
+                                <h4><a href="post-details.html" class="post-title">Lời khuyên từ một người ngoài hai mươi</a>
                                 </h4>
                                 <ul class="card-meta list-inline mb-0">
                                     <li class="list-inline-item mb-0">
@@ -65,7 +65,7 @@
                         <div class="card-body d-flex">
                             <img class="card-img-sm" src="client/images/post/post-2.jpg">
                             <div class="ml-3">
-                                <h4><a href="post-details.html" class="post-title">The Design Files - Homes
+                                <h4><a href="post-details.html" class="post-title">Các tập tin thiết kế - Nhà
                                         Minimalist</a></h4>
                                 <ul class="card-meta list-inline mb-0">
                                     <li class="list-inline-item mb-0">
@@ -83,7 +83,7 @@
                         <div class="card-body d-flex">
                             <img class="card-img-sm" src="client/images/post/post-4.jpg">
                             <div class="ml-3">
-                                <h4><a href="post-details.html" class="post-title">The Skinny Confidential</a></h4>
+                                <h4><a href="post-details.html" class="post-title">Bí mật của Skinny</a></h4>
                                 <ul class="card-meta list-inline mb-0">
                                     <li class="list-inline-item mb-0">
                                         <i class="ti-calendar"></i>14 jan, 2020
@@ -194,7 +194,7 @@
                 <aside class="col-lg-4 sidebar-home">
                     <!-- Search -->
                     <div class="widget">
-                        <h4 class="widget-title"><span>Search</span></h4>
+                        <h4 class="widget-title"><span>Tìm kiếm</span></h4>
                         <form action="#!" class="widget-search">
                             <input class="mb-3" id="search-query" name="s" type="search"
                                 placeholder="Type &amp; Hit Enter...">

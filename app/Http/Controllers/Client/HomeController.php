@@ -21,7 +21,6 @@ class HomeController extends Controller
 
         $tag = Tag::withCount('posts')->get();
 
-
         return view('frontends.tag1', compact('tag', 'posts', 'Bag'));
     }
 
@@ -30,7 +29,7 @@ class HomeController extends Controller
         $query = Post::with('tags')->orderBy('created_at', 'desc')->get();
         // dd($query);
         $hotPost = Post::orderBy('view', 'desc')->limit(3)->get();
-        $latestPost = Post::orderBy('updated_at', 'asc')->oldest('id')->limit(1)->get();
+        $latestPost = Post::orderBy('updated_at', 'desc')->limit(1)->get();
         $popularPost = Post::orderBy('view', 'desc')->limit(1)->get();
         $tag = Tag::withCount('posts')->get();
         return view('frontends.home', ['query' => $query, 'hot' => $hotPost, 'latest' => $latestPost, 'popolar' => $popularPost, 'tag' => $tag]);
@@ -70,8 +69,9 @@ class HomeController extends Controller
     }
 
 
-    public function contactView(){
+    public function contactView()
+    {
         $tag = Tag::withCount('posts')->get();
-        return view('frontends.contact',compact('tag'));
+        return view('frontends.contact', compact('tag'));
     }
 }

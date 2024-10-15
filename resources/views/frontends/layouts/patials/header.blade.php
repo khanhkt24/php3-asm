@@ -1,7 +1,7 @@
 <div class="container">
     <div class="row">
         <div class="col-lg-9 mx-auto">
-            <h1 class="mb-5">What Would You <br> Like To Read Today?</h1>
+            <h1 class="mb-5">Bạn có muốn <br> Đọc bài viết gì hôm nay?</h1>
             <ul class="list-inline widget-list-inline">
                 @foreach ($tag as $key=>$value)
                     <li class="list-inline-item"><a href="{{route('tags.posts',$value->id)}}">{{$value->name}}</a></li>
