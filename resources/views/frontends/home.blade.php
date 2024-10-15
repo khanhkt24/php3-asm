@@ -1,6 +1,5 @@
 @extends('frontends.layouts.master')
 
-
 @section('content')
     <section class="section pb-0">
         <div class="container">

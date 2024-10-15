@@ -13,10 +13,8 @@ class HomeController extends Controller
 
     public function showPostsByTag($tagId)
     {
-        // Lấy tag theo ID và kèm theo các bài đăng
         $Bag = Tag::with('posts')->findOrFail($tagId);
 
-        // Truy cập bài đăng của tag
         $posts = $Bag->posts;
 
         $tag = Tag::withCount('posts')->get();
