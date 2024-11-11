@@ -24,12 +24,12 @@ class HomeController extends Controller
 
     public function dashboard()
     {
-        $query = Post::with('tags')->orderBy('created_at', 'desc')->get();
+        $query           = Post::with('tags')->orderBy('created_at', 'desc')->get();
         // dd($query);
-        $hotPost = Post::orderBy('view', 'desc')->limit(3)->get();
-        $latestPost = Post::orderBy('updated_at', 'desc')->limit(1)->get();
-        $popularPost = Post::orderBy('view', 'desc')->limit(1)->get();
-        $tag = Tag::withCount('posts')->get();
+        $hotPost        = Post::orderBy('view', 'desc')->limit(3)->get();
+        $latestPost     = Post::orderBy('updated_at', 'desc')->limit(1)->get();
+        $popularPost    = Post::orderBy('view', 'desc')->limit(1)->get();
+        $tag            = Tag::withCount('posts')->get();
         return view('frontends.home', ['query' => $query, 'hot' => $hotPost, 'latest' => $latestPost, 'popolar' => $popularPost, 'tag' => $tag]);
     }
 
